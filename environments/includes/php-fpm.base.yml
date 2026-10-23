@@ -25,6 +25,7 @@ services:
       - NODE_VERSION=${NODE_VERSION:-12}
       - COMPOSER_VERSION=${COMPOSER_VERSION:-1}
       - COMPOSER_MEMORY_LIMIT=-1
+      - COMPOSER_AUTH
       - HISTFILE=/bash_history/.bash_history
       - CHOWN_DIR_LIST=${CHOWN_DIR_LIST:-}
     volumes: *volumes
@@ -41,6 +42,7 @@ services:
       - NODE_VERSION=${NODE_VERSION:-12}
       - COMPOSER_VERSION=${COMPOSER_VERSION:-1}
       - COMPOSER_MEMORY_LIMIT=-1
+      - COMPOSER_AUTH
       - PHP_IDE_CONFIG=serverName=${WARDEN_ENV_NAME}-docker
       - HISTFILE=/bash_history/.bash_history
       - CHOWN_DIR_LIST=${CHOWN_DIR_LIST:-}
